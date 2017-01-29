@@ -32,12 +32,17 @@ from turtle_chat_widgets import Button, TextInput
 #####################################################################################
 class TextBox(TextInput):
     def draw_box(self):
-        print("a")
+        turtle.penup()
+        turtle.goto(-100,-100)
+        turtle.pendown()
+        turtle.goto(100,-100)
+        turtle.goto(100,-50)
+        turtle.goto(-100,-50)
+        turtle.goto(-100,-100)
     def write_msg(self):
-        print('message')
-
-w=TextBox()
-w.draw_box()
+        turtle.write(self.new_msg)
+        
+        
 #####################################################################################
 #                                  SendButton                                       #
 #####################################################################################

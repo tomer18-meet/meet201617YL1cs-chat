@@ -301,8 +301,7 @@ class TextInput(metaclass=ABCMeta):
     def add_g(self):
         self.new_msg+='g'
         self.write_msg()
-        print(self.new_msg)
-    def add_G(self):
+f    def add_G(self):
         self.new_msg+='G'
         self.write_msg()
         print(self.new_msg)
