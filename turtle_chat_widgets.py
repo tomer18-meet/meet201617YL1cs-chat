@@ -1,6 +1,5 @@
 import turtle
 from abc import ABCMeta,abstractmethod
-
 class Button(metaclass=ABCMeta):
     '''
     Abstract class wrapping a turtle object to be used as a clickable button.
@@ -301,7 +300,7 @@ class TextInput(metaclass=ABCMeta):
     def add_g(self):
         self.new_msg+='g'
         self.write_msg()
-f    def add_G(self):
+    def add_G(self):
         self.new_msg+='G'
         self.write_msg()
         print(self.new_msg)
